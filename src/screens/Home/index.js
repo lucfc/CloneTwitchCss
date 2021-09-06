@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import {
   Text,
   View,
@@ -19,10 +19,10 @@ import IconDiscover from '../../assets/icons/compass.png';
 import IconBrowse from '../../assets/icons/browse.png';
 import IconTrophy from '../../assets/icons/trophy.png';
 
-import {style} from './style';
-import {Category} from '../../components/categoryCards';
-import {Channels} from '../../components/channelCard';
-import {LoginModal} from '../../components/Modal/LoginModal/loginModal';
+import { style } from './style';
+import { Category } from '../../components/categoryCards';
+import { Channels } from '../../components/channelCard';
+import { LoginModal } from '../../components/Modal/LoginModal/loginModal';
 
 export const Home = () => {
   const modalizeRef = useRef(null);
@@ -50,7 +50,7 @@ export const Home = () => {
       <ScrollView>
         <Text style={style.primaryTexts}>Followed Categories</Text>
         <Category />
-        <Text style={style.primaryTexts}>Your Live Channels</Text>
+        <Text style={style.primaryTexts}>Your Live Channel</Text>
         <Channels />
       </ScrollView>
       <View style={style.navbar}>
